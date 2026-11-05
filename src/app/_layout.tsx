@@ -39,6 +39,7 @@ export default function RootLayout() {
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="dashboard" />
+          <Stack.Screen name="insights" />
         </Stack>
       </ClerkLoaded>
     </ClerkProvider>
