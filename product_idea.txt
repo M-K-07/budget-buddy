@@ -1,0 +1,44 @@
+**Daily Budget** is a personal expense tracker for mobile. You log what you spend each day, see how much of your monthly budget is left, and everything syncs to a Google Sheet. The currency is Indian rupees (₹), and the design is shown in both light and dark themes.
+
+**Main idea**
+- You set a monthly budget, which is ₹15,000 in the mockup.
+- You add expenses quickly, such as "Milk packet ₹15", "Bus fare ₹30" or "Lunch ₹100".
+- The app shows what's left (₹10,800) and what you've spent (₹4,200).
+- Expenses are sorted into categories automatically.
+
+**Main screens (bottom tabs: Home, Insights, Sheets, More)**
+
+1. **Home**
+   - Shows "Remaining this month" and a progress bar of spent versus budget.
+   - Has two buttons: **Add expense** and **Sync to Sheets**.
+   - Lists recent expenses grouped by Today and Yesterday, each with a colored category icon.
+
+2. **Insights**
+   - Shows spending for the month against the budget.
+   - Has Week, Month and Year views.
+   - Breaks spending down by category: Food 36%, Transport 24%, Groceries 20%, Bills 12% and Shopping 8%, each with its amount.
+
+3. **Sheets**
+   - Shows the Google Sheets integration, with one spreadsheet ("My Daily Budget") and a tab for each month.
+   - Shows sync status ("Synced", "Last sync 2 min ago") and an Auto-sync toggle.
+   - Has **Open in Sheets** and **Export CSV** buttons.
+   - Lists the monthly tabs (October active, September and August synced) and a live preview table with date, expense, category and amount.
+
+4. **More** (settings)
+   - Lets you set the monthly budget and the currency (INR), and shows 5 categories.
+   - Notifications: alerts at 80% and 100% of the budget, and auto-sync to Sheets.
+   - Appearance: Light, Dark or Auto.
+   - Data and account: Export CSV and Sign out.
+
+**Onboarding and sign-in**
+- **Splash:** the tagline is "Log every rupee in seconds. Synced to your Google Sheet."
+- **Landing:** a preview card with the pitch "Track every rupee in seconds", and a "Get started" button.
+- **Sign in / Sign up:** Google and Apple login, or email and password. The screens say "Secured by Clerk", which suggests Clerk handles authentication.
+- **Verify:** an email check with a 6-digit code and a resend timer.
+
+**Design**
+- The type is Manrope, and the look is clean with an indigo accent (`#5B4CF0`).
+- Cards are rounded, and there are small animations: elements rising in, progress bars filling and a pulsing sync indicator.
+- Each screen has a light and a dark version.
+
+The mockup is made of screens only, with no live data or working logic behind them. Let me know what you'd like to change.
