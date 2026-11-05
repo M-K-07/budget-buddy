@@ -28,7 +28,7 @@ export async function GET(request: Request) {
       LIMIT 1
     `;
     const expenses = await sql`
-      SELECT expense_id AS id, title, amount::float8 AS amount, category, spent_at AS date
+      SELECT expense_id AS id, title, amount::float8 AS amount, category, COALESCE(transaction_type, 'expense') AS type, spent_at AS date
       FROM budget_expenses
       WHERE clerk_user_id = ${clerkUserId} AND month_start = ${month}::date
       ORDER BY spent_at DESC

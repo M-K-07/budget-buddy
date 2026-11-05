@@ -32,9 +32,15 @@ await sql`
     title text NOT NULL,
     amount numeric(14, 2) NOT NULL CHECK (amount > 0),
     category text NOT NULL DEFAULT 'Other',
+    transaction_type text NOT NULL DEFAULT 'expense',
     spent_at timestamptz NOT NULL DEFAULT now(),
     PRIMARY KEY (clerk_user_id, expense_id)
   )
+`;
+
+await sql`
+  ALTER TABLE budget_expenses
+  ADD COLUMN IF NOT EXISTS transaction_type text NOT NULL DEFAULT 'expense'
 `;
 
 await sql`
